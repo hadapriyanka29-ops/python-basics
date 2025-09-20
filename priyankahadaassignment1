@@ -1,0 +1,223 @@
+
+
+ Python basic question
+
+
+ 1. What is Python, and why is it popular?
+ Ans- Python is a versatile high level programming language known for its
+ beginner
+ friendly English like syntax that emphasises code readability and conciseness
+ It is popular because its easy to use and has vast ecosystem of pre written
+code, tools and framework which save users time and efforts by allowing them
+ to reuse existing code.
+
+
+ 2. What is an interpreter in Python?
+ Ans-A python interpreter is a program that converts Python code into
+machine readable code and run them and enabling you to execute python
+script and view results instantly. It acts as a bridge between the high-level
+python code you write and the low-level instructions that the computer can
+directly utilize.
+
+ 3. What are pre-defined keywords in Python?
+ Ans- pre-defined keywords are reserved words that hold the special meaning
+within the language. These keywords cannot be used as identifiers for
+variables, functions, classes or any other user defined entities.
+
+ 4. Can keywords be used as variable names?
+ Ans- No
+
+ 5. What is mutability in Python?
+ Ans- An object is considered as mutable if its state or value can be modified
+after it is created.
+
+ 6. Why are lists mutable, but tuples are immutable?
+ Ans- list can be modified after they created but tuples cannot be modified
+after they were created because this ensures data integrity as once a tuple is
+defined its element cannot be accidently or intensely changed.
+
+
+ 7. What is the difference between “==” and “is” operators in Python?
+ Ans- The == operator is used to compare the equality of objects. The is
+operator is used to check if different variables are pointing to the same object
+in the memory.
+
+
+ 8. What are logical operators in Python?
+ Ans-Logical operators in Python are used to combine conditional statements,
+allowing you to evaluate multiple conditions and control the flow of your
+program. These operators return a Boolean value (True or False) based on the
+logic applied.
+
+ 9. What is type casting in Python?
+ Ans- Type Casting in Python refers to the process of converting one data type
+ into another. This can be done either implicitly (automatically by Python)
+or explicitly (manually by the programmer). It is often used to ensure
+compatibility between different data types during operations.
+
+ 10. What is the difference between implicit and explicit type casting?
+ Ans - Implicit Type Casting - This is an automatic type conversion performed by
+Python. It happens when Python converts a smaller or less precise data type into
+a larger or more precise data type to avoid data loss.
+ For ex
+a= 5
+ b= 3.5
+ c= a+b
+ print(c)
+ print(type(c))
+ output:
+ 8.5
+ Float
+ Explicit Type Casting - This is a manual type conversion where the programmer
+explicitly specifies the desired data type using type conversion functions like int
+(), float (), str (), etc.
+ For ex
+a= "10"
+ b= 3
+ c=int(a)+b
+print(c)
+ Python basic question
+ print(type(c))
+ output:
+ 13
+ Int
+
+
+ 11.   What is the purpose of conditional statements in Python?
+ Ans - Conditional statements in Python are used to control the flow of a program
+ by executing specific blocks of code based on whether certain conditions are true
+ or false. They allow programs to make decisions and behave differently in various
+situations.
+
+ 12. How does the Elif statement work?
+ Ans-The Elif statement in Python allows you to check multiple conditions in a
+sequence, executing the block of code associated with the first true condition.
+ For ex
+temperature =30
+ if temperature >30:
+ print("hot")
+ elif
+ temperature <= 30:
+ print("cold")
+ output- cold
+
+ 13.    What is the difference between for and while loops.
+ Ans - For Loop: Used to iterate over a sequence (like a list, tuple, string, or
+range) or any iterable object. It is ideal when the number of iterations is
+known beforehand.
+ For ex
+i=5
+ for i in range(5):
+   print(i)
+ Python basic question
+ output – 0
+ 1
+ 2
+ 3
+ 4
+ While Loop: Used to repeatedly execute a block of code as long as a specified
+condition is True. It is better suited for scenarios where the number of
+iterations is not predetermined.
+ For ex -  count = 0
+ while count < 5:
+   print(count)
+ count += 1
+ output – 1
+ 2
+ 3
+ 4
+1. Write a Python program to print "Hello, World”.
+ Ans-   print (“Hello World!”)
+     Output- Hello World!
+ 2. Write a Python program that displays your name and age.
+ Ans- Name="Priyanka"
+            Age=28
+ Python basic question
+            print (Name,Age)
+           Output – Priyanka,28
+ 3. Write code to print all the pre-defined keywords in Python using the keyword
+library.
+ Ans - help(“keywords”)
+         Output - Here is a list of the Python keywords.  Enter any keyword to get
+more
+help.
+ False               class               from                or
+ None                continue            global              pass
+ True                def                 if                  raise
+ and                 del                 import              return
+ as
+elif
+                in                  try
+ assert              else                is                  while
+ async               except              lambda              with
+ await               finally             nonlocal            yield
+ break               for                 not
+ 4. Write a program that checks if a given word is a Python keyword.
+ Ans
+5. Create a list and tuple in Python, and demonstrate how attempting to change
+ an element works differently for each.
+ Ans- Creating a list
+ My_list = [1,2,3,4]
+ My_list[1] = 20
+ Print(my_list)
+Python basic question
+ Output = [1,20,3,4]
+ Creating a tuple
+ my_tuple = (1,2,3,4)
+ my_tuple(1) == 20
+                print(my_tuple)
+                output -
+TypeError: 'tuple' object is not callable.
+ 6. Write a function to demonstrate the behavior of mutable and immutable
+arguments.
+ Ans
+7. Write a program that performs basic arithmetic operations on two user
+input numbers.
+ Ans - num1 = int(input("enter first number"))
+ num2 = int(input("enter second number"))
+ Addition = num1 + num2
+ print(Addition)
+ substraction = num1 - num2
+ print(substraction)
+ multiplication = num1 * num2
+ print(multiplication)
+ division = num1 / num2
+ print(division)
+ output
+enter first number50
+ enter second number30
+ 80
+ 20
+ 1500
+Python basic question
+ 1.6666666666666667
+ a = 1
+ b = 3
+ print(a > 2 & b > 2)
+ output
+false
+ a = 1
+ b = 3
+ print(a > 2 or b > 2)
+ output – true
+ a=false
+ print(not a)
+ output – True
+ 11. Write a program that checks if a number is positive, negative, or zero.
+ Ans
+x = input("enter a number")
+ y = int(x)
+ if y > 0:
+ print("number is positive")
+ elif y < 0:
+ print("number is negative")
+ else:
+ print("number is zero")
+ 12. Write a for loop to print numbers from 1 to 10.
+ Ans – i = 1
+for i in range(100):
+ Python basic question
+  print(i)
+ i= i +1
+ This document was created with Word to PDF Converter
+ Power by http://win10.io
